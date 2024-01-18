@@ -10,38 +10,45 @@
     <link rel="stylesheet" href="styles.css">
     <title>DES 157A Home Page</title>
 </head>
-<header>
-    <img src="images/banner.jpg" alt="banner" width="1100px" height="250px">
-    <h1>Welcome to Tiffany Lui's Portal Page</h1>
-    <h2>DES 157A - Interactive Media II - Winter 2024</h2>
-</header>
 
 <body>
+    <header>
+        <img src="images/banner.jpg" alt="banner" width="1100" height="250">
+        <h1>Welcome to Tiffany Lui's Portal Page</h1>
+        <h2>DES 157A - Interactive Media II - Winter 2024</h2>
+    </header>
     <main>
-        <section id="studios-experiments">
-            <div class="cards">
-                <div class="front"><img src="images/mimikyu.jpg" alt="mimikyu"></div>
+        <article>
+            <div class="card">
                 <div class="back"></div>
+                <div class="front"><img src="images/mimikyu.jpg" alt="mimikyu"></div>
             </div>
             <h2>Studios</h2>
-                <ul>
-                    <li><a href="#">Learning Journal</a></li>
-                    <li><a href="#">Mad Libs</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Every Picture</a></li>
-                    <li><a href="#">Game On!</a></li>
-                </ul>
+                <div class="splitscreen">
+                    <div class="left">
+                        <ul>
+                            <li><a href="#">Learning Journal</a></li>
+                            <li><a href="#">Mad Libs</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="#">Every Picture</a></li>
+                            <li><a href="#">Game On!</a></li>
+                        </ul>
+                    </div>
+                </div>
             <h2>Experiments</h2>
                 <ul>
                     <li><a href="#">Experiment 1</a></li>
                     <li><a href="#">Experiment 2</a></li>
                 </ul>
-        </section>
+            </article>
         <article>
-            <div class="cards">
-                <div class="front"><img src="images/gengar.jpg" alt="gengar"></div>
+            <div class="card">
                 <div class="back"></div>
+                <div class="front"><img src="images/gengar.jpg" alt="gengar"></div>
+                
             </div>
             <h2>R&D</h2>
                 <ul>
@@ -51,15 +58,16 @@
                 </ul>
         </article>
         <article>
-            <div class="cards">
-                <div class="front"><img src="images/frosslass.jpg" alt="frosslass"></div>
+            <div class="card">
                 <div class="back"></div>
+                <div class="front"><img src="images/frosslass.jpg" alt="frosslass"></div>
+                
             </div>
             <h2>Final Project</h2>
                 <ul>
                     <li><a href="#">Final Project</a></li>
                 </ul>
         </article>
-</main>
+    </main>
 </body>
 </html>
