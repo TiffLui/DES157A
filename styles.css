@@ -4,7 +4,6 @@ header, img {
 }
 
 body {
-    /* background-color: #8265A1; */
     background: rgb(32,7,38);
     background: linear-gradient(180deg, rgba(32,7,38,1) 0%, rgba(174,143,217,1) 100%);
     background-attachment: fixed;
@@ -25,6 +24,7 @@ header, h2 {
     font-size: 30px;
     color: white;
 }
+
 
 article {
     display: flex;
@@ -76,4 +76,14 @@ main article {
     width: auto;
     height: 204px;
     display: block;
+}
+
+p {
+    font-family: 'AR One Sans', 'sans-serif';
+    color: white;
+}
+
+ul li {
+    text-decoration: none;
+    list-style-type: none;
 }
