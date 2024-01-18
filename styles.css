@@ -17,6 +17,73 @@ header, h1 {
     font-size: 40px;
     color: white;
 }
+#scene {
+    position: relative;
+    width: 1100px;
+    margin: auto;
+}
+#cloud1 {
+    position: absolute;
+    left: 280px;
+    top: 20px;
+    animation: animation1 4s infinite;
+}
+
+#cloud2 {
+    position: absolute;
+    right: 220px;
+    top: 50px;
+    animation: animation2 4s infinite;
+}
+
+#cloud3 {
+    position: absolute;
+    right: 180;
+    top: 30px;
+    animation: animation3 4s infinite;
+}
+
+@keyframes animation1 {
+    0% {
+        left: 190px;
+    }
+
+    50% {
+        left: 280px;
+    }
+
+    100% {
+        left: 190px;
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        right: 220px;
+    }
+
+    50% {
+        right: 320px;
+    }
+
+    100% {
+        right: 220px;
+    }
+}
+
+
+@keyframes animation3
+    0% {
+        right: 180px;
+    }
+
+    50% {
+        right: 140px;
+    }
+
+    100% {
+        right: 180px;
+    }
 
 header, h2 {
     text-align: center;
@@ -29,7 +96,7 @@ header, h2 {
 main {
     box-sizing: border-box;
     min-height: calc( 100vh - 400px);
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     max-width: 960px;
     margin: auto;
     display: flex;
