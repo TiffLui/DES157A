@@ -36,13 +36,6 @@ header, h1 {
     animation: animation2 4s infinite;
 }
 
-#cloud3 {
-    position: absolute;
-    right: 180;
-    top: 30px;
-    animation: animation3 4s infinite;
-}
-
 @keyframes animation1 {
     0% {
         left: 190px;
@@ -70,20 +63,6 @@ header, h1 {
         right: 220px;
     }
 }
-
-
-@keyframes animation3
-    0% {
-        right: 180px;
-    }
-
-    50% {
-        right: 140px;
-    }
-
-    100% {
-        right: 180px;
-    }
 
 header, h2 {
     text-align: center;
