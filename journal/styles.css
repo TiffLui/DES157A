@@ -32,6 +32,7 @@ time {
 article {
     border-style: solid;
     border-color: #A192A6;
+    border-radius: 20px;
 }
 
 p {
@@ -43,4 +44,13 @@ img {
     display: block;
     margin: auto;
     padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #dabdef;
+}
+
+a:hover {
+    color: white;
 }
