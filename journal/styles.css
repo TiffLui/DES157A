@@ -1,0 +1,46 @@
+body {
+    background: rgb(32,7,38);
+    background: linear-gradient(180deg, rgba(32,7,38,1) 0%, rgba(174,143,217,1) 100%);
+    background-attachment: fixed;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+time {
+    color: white;
+    text-align: center;
+    display: block;
+    font-family: 'Work Sans', sans-serif;
+}
+
+article {
+    border-style: solid;
+    border-color: #A192A6;
+}
+
+p {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.3em;
+}
+img {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+}
