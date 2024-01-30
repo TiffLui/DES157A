@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <style>
+        .red {background-color: #dc616b};
+        .orange {background-color: #FFB486};
+        .yellow {background-color: #E8C538};
+        .green {background-color: #9EBF56};
+        .blue {background-color: #A7E7F6};      
+        .purple {background-color: #DAC8F7};
+    </style>
+</head>
+<body>
+    <h1>Experiment 2</h1>
+    <script>
+        // Asks the user to pick a color from the list to change the background color to said color. 
+        //Uses a for loop to ensure that the colors picked, match up with the colors that are available. 
+        var colorOptions = [`red`, `orange`, `yellow`, `green`, `blue`, `purple`];
+        var promptColor = prompt("Please cheese a color from: red, orange, yellow, green, blue, or purple!", "").toLowerCase();
+        var pickedColor = document.querySelector(`body`);
+
+        for(var i=0; i<colorOptions.length; i++) {
+            if(promptColor == "") {
+                console.log("Please pick a color from the list! Please refresh the page!")
+            }
+            else if(promptColor == "red") {
+                pickedColor.className = "red";
+            }
+            else if(promptColor == "orange") {
+                pickedColor.className = "orange";
+            }
+            else if(promptColor == "yellow") {
+                pickedColor.className = "yellow";
+            }
+            else if(promptColor == "green") {
+                pickedColor.className = "green";
+            }
+            else if(promptColor == "blue") {
+                pickedColor.className = "blue";
+            }
+            else if(promptColor == "purple") {
+                pickedColor.className = "purple";
+            }
+        }
+    </script>
+</body>
+</html>
