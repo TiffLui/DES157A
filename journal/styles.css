@@ -33,12 +33,15 @@ article {
     border-style: solid;
     border-color: #A192A6;
     border-radius: 20px;
+    margin: 40px;
 }
 
 p {
     color: white;
     font-family: 'Work Sans', sans-serif;
     line-height: 1.3em;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 img {
     display: block;
