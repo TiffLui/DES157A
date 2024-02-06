@@ -1,0 +1,17 @@
+h1 {
+    font-size: 40px;
+    font-family: 'Sofia', cursive;
+    text-align: center;
+}
+form {
+    font-family: 'Antic Didone', serif;
+    font-size: 15px;
+    text-align: center;
+}
+label, input {
+    display: block;
+}
+/* Background color is temporary */
+body {
+    background-color: #D9C5B4;
+}
