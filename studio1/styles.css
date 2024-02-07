@@ -8,10 +8,16 @@ form {
     font-size: 15px;
     text-align: center;
 }
-label, input {
+
+div {
     display: block;
+    margin: 20px;
 }
+
 /* Background color is temporary */
 body {
     background-color: #D9C5B4;
+}
+#form2 {
+    display: none;
 }

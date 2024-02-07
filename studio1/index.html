@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Sofia&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <title>Mad Libs</title>
 </head>
 <body>
@@ -15,73 +16,114 @@
         <h1>A Love Letter</h1>
     </header>
     <main>
-        <form class="form1">
-            <label for ="name1">Name:</label>
-            <input type="text" id="name1">
+        <form id="form1">
+            <div>
+                <label for ="name1">Name:</label>
+                <input type="text" id="name1">
+            </div>
 
-            <label for ="noun1">Noun:</label>
-            <input type="text" id="noun1">
+            <div>
+                <label for ="noun1">Noun:</label>
+                <input type="text" id="noun1">
+            </div>
 
-            <label for ="adj1">Adjective:</label>
-            <input type="text" id="adj1">
+            <div>
+                <label for ="adj1">Adjective:</label>
+                <input type="text" id="adj1">
+            </div>
 
-            <label for ="noun2">Noun:</label>
-            <input type="text" id="noun2">
+            <div>
+                <label for ="noun2">Noun:</label>
+                <input type="text" id="noun2">
+            </div>
 
-            <label for ="building1">Type of Building:</label>
-            <input type="text" id="building1">
+            <div>
+                <label for ="building1">Type of Building:</label>
+                <input type="text" id="building1">
+            </div>
 
-            <label for ="adj2">Adjective:</label>
-            <input type="text" id="adj2">
+            <div>
+                <label for ="adj2">Adjective:</label>
+                <input type="text" id="adj2">
+            </div>
 
-            <label for ="pluralN">Plural Noun:</label>
-            <input type="text" id="pluralN">
+            <div>
+                <label for ="pluralN">Plural Noun:</label>
+                <input type="text" id="pluralN">
+            </div>
 
-            <label for ="animal1">Animal:</label>
-            <input type="text" id="animal1">
+            <div>
+                <label for ="animal1">Animal:</label>
+                <input type="text" id="animal1">
+            </div>
 
-            <label for ="body1">Body Part:</label>
-            <input type="text" id="body1">
+            <div>
+                <label for ="body1">Body Part:</label>
+                <input type="text" id="body1">
+            </div>
 
-            <label for ="feeling1">A Feeling:</label>
-            <input type="text" id="feeling1">
+            <div>
+                <label for ="feeling1">A Feeling:</label>
+                <input type="text" id="feeling1">
+            </div>
 
-            <input type="submit" value="Next">
+                <input type="submit" value="Next" id="btn1">
         </form>
 
-        <form class="form2">
-            <label for ="adj3">Adjective:</label>
-            <input type="text" id="adj3">
+        <form id="form2">
+            <div>
+                <label for ="adj3">Adjective:</label>
+                <input type="text" id="adj3">
+            </div>
 
-            <label for ="role">A Role:</label>
-            <input type="text" id="role">
+            <div>
+                <label for ="role">A Role:</label>
+                <input type="text" id="role">
+            </div>
 
-            <label for ="commonN">Common Noun:</label>
-            <input type="text" id="commonN">
+            <div>
+                <label for ="commonN">Common Noun:</label>
+                <input type="text" id="commonN">
+            </div>
 
-            <label for ="body2">Body Organ:</label>
-            <input type="text" id="body2">
+            <div>
+                <label for ="body2">Body Organ:</label>
+                <input type="text" id="body2">
+            </div>
 
-            <label for ="adj4">Adjective:</label>
-            <input type="text" id="adj4">
+            <div>
+                <label for ="adj4">Adjective:</label>
+                <input type="text" id="adj4">
+            </div>
 
-            <label for ="noun3">Noun:</label>
-            <input type="text" id="noun3">
+            <div>
+                <label for ="noun3">Noun:</label>
+                <input type="text" id="noun3">
+            </div>
 
-            <label for ="place">A Place:</label>
-            <input type="text" id="place">
+            <div>
+                <label for ="place">A Place:</label>
+                <input type="text" id="place">
+            </div>
 
-            <label for ="adverb1">Adverb:</label>
-            <input type="text" id="adverb1">
+            <div>
+                <label for ="adverb1">Adverb:</label>
+                <input type="text" id="adverb1">
+            </div>
 
-            <label for ="verb1">Verb:</label>
-            <input type="text" id="verb1">
+            <div>
+                <label for ="verb1">Verb:</label>
+                <input type="text" id="verb1">
+            </div>
 
-            <label for ="name2">Name:</label>
-            <input type="text" id="name2">
+            <div>
+                <label for ="name2">Name:</label>
+                <input type="text" id="name2">
+            </div>
 
-            <input type="submit" value="Receive Your Letter!">
+            <input type="submit" value="Receive Your Letter!" id="btn2">
         </form>
+        <article id="madlib"></article>
     </main>
 
 </body>
