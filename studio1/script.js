@@ -8,6 +8,15 @@
     const formTwo = document.querySelector('#form2');
     const formOne = document.querySelector('#form1');
 
+    const myText = document.querySelector('#finalText');
+
+    const noLetter = document.querySelector('#letterNo');
+    const receiveP = document.querySelector('#name');
+    const paraOne = document.querySelector('#para1');
+    const paraTwo = document.querySelector('#para2');
+    const paraThree = document.querySelector('#para3');
+    const closings = document.querySelector('#sincerely');
+
     nextBtn.addEventListener('click', function(event) {
         console.log('hi');
         formTwo.style.display = 'block';
@@ -21,7 +30,7 @@
 
         formTwo.style.display = 'none';
 
-        let myText;
+        // let myText;
         //form 1
         const name1 = document.querySelector('#name1').value;
         const noun1 = document.querySelector('#noun1').value;
@@ -45,7 +54,7 @@
         const verb1 = document.querySelector('#verb1').value;
         const name2 = document.querySelector('#name2').value;
 
-        myText= `My Dearest ${name1},
+        /* myText.innerHTML = `My Dearest ${name1},
         As the ${noun1} sets upon the horizon, casting a ${adj1} glow upon my ${noun2}, I find comfort in the ${building1} of your love. Your ${adj2} laughter echoes in the ${pluralN} of my soul, and the melody of your voice is the sweetest ${animal1}'s song.
         
         With quill in ${body1} and ink of ${feeling1}, I write this letter to declare my ${adj3} love for you. Like a ${role} sworn to protect his ${commonN}, my ${body1} is bound to yours, ready to face the challenges that may arise in our ${adj4} journey.
@@ -53,7 +62,7 @@
         In your ${body2}, I see the reflection of a thousand stars, each telling tales of the timeless connection between us. Let our love be a ${noun3} that guides us through the ${place} of life, and may the flame of our passion burn ${adverb1}, ${verb1} the path to our shared destiny.
         
         Yours Eternally,
-        ${name2}`;
+        ${name2}`; */
 
         //form 1
         document.querySelector('#name1').value ='';
@@ -78,6 +87,12 @@
         document.querySelector('#name2').value ='';
 
 
-        formData.innerHTML = myText;
+        // formData.innerHTML = myText;
+        noLetter.innerHTML= 'Letter No. 222';
+        receiveP.innerHTML = `My Dearest ${name1},`;
+        paraOne.innerHTML = `As the ${noun1} sets upon the horizon, casting a ${adj1} glow upon my ${noun2}, I find comfort in the ${building1} of your love. Your ${adj2} laughter echoes in the ${pluralN} of my soul, and the melody of your voice is the sweetest ${animal1}'s song.`;
+        paraTwo.innerHTML= `With quill in ${body1} and ink of ${feeling1}, I write this letter to declare my ${adj3} love for you. Like a ${role} sworn to protect his ${commonN}, my ${body1} is bound to yours, ready to face the challenges that may arise in our ${adj4} journey.`;
+        paraThree.innerHTML= `In your ${body2}, I see the reflection of a thousand stars, each telling tales of the timeless connection between us. Let our love be a ${noun3} that guides us through the ${place} of life, and may the flame of our passion burn ${adverb1}, ${verb1} the path to our shared destiny.`;        
+        closings.innerHTML= `Yours Eternally, ${name2}`;
     });
 })();

@@ -24,3 +24,16 @@ body {
 #form2 {
     display: none;
 }
+
+#letterNo {
+    color: red;
+}
+
+#name {
+    color: green;
+}
+
+#sincerely {
+    color: blue;
+}
+
