@@ -1,23 +1,26 @@
 h1 {
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Sofia', cursive;
     text-align: center;
+    margin-top: 50px;
 }
+
 form {
     font-family: 'Antic Didone', serif;
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
 }
 
 div {
     display: block;
-    margin: 20px;
+    margin: 25px;
 }
 
-/* Background color is temporary */
 body {
-    background-color: #D9C5B4;
+    background-image: url("images/madlibs-bg.jpg");
+    background-size: cover;
 }
+
 #form2 {
     display: none;
 }
