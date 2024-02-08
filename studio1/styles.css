@@ -21,19 +21,22 @@ body {
     background-size: cover;
 }
 
+p {
+    font-family: 'Antic Didone', serif;
+    font-size: 18px;
+}
+
 #form2 {
     display: none;
 }
 
-#letterNo {
-    color: red;
+#letterNo, #sincerely, #closeName {
+    text-align: right;
+    margin-right: 450px;
 }
 
-#name {
-    color: green;
-}
-
-#sincerely {
-    color: blue;
+#name, #para1, #para2, #para3 {
+    margin-left: 450px;
+    margin-right: 450px;
 }
 

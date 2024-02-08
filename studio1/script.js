@@ -16,6 +16,7 @@
     const paraTwo = document.querySelector('#para2');
     const paraThree = document.querySelector('#para3');
     const closings = document.querySelector('#sincerely');
+    const closingN = document.querySelector('closeName');
 
     nextBtn.addEventListener('click', function(event) {
         console.log('hi');
@@ -93,6 +94,7 @@
         paraOne.innerHTML = `As the ${noun1} sets upon the horizon, casting a ${adj1} glow upon my ${noun2}, I find comfort in the ${building1} of your love. Your ${adj2} laughter echoes in the ${pluralN} of my soul, and the melody of your voice is the sweetest ${animal1}'s song.`;
         paraTwo.innerHTML= `With quill in ${body1} and ink of ${feeling1}, I write this letter to declare my ${adj3} love for you. Like a ${role} sworn to protect his ${commonN}, my ${body1} is bound to yours, ready to face the challenges that may arise in our ${adj4} journey.`;
         paraThree.innerHTML= `In your ${body2}, I see the reflection of a thousand stars, each telling tales of the timeless connection between us. Let our love be a ${noun3} that guides us through the ${place} of life, and may the flame of our passion burn ${adverb1}, ${verb1} the path to our shared destiny.`;        
-        closings.innerHTML= `Yours Eternally, ${name2}`;
+        closings.innerHTML= 'Yours Eternally,';
+        closingN.innerHTML= `${name2}`;
     });
 })();
