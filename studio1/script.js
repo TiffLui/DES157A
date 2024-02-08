@@ -17,11 +17,9 @@
     const closings = document.querySelector('#sincerely');
     const closingN = document.querySelector('#closeName');
 
-    nextBtn.addEventListener('click', function(event) {
+    formOne.addEventListener('submit', function(event) {
         
         event.preventDefault();
-        // event.stopPropagation();
-
 
         console.log('hi');
         formTwo.style.display = 'block';
@@ -32,13 +30,12 @@
 
 
 
-    receiveBtn.addEventListener('click', function(event) {
+    formTwo.addEventListener('submit', function(event) {
         event.preventDefault();
 
         formTwo.style.display = 'none';
         document.getElementById('output').style.display = 'block';
 
-  
         //form 1
         const name1 = document.querySelector('#name1').value;
         const noun1 = document.querySelector('#noun1').value;
