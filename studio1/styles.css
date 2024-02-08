@@ -3,6 +3,7 @@ h1 {
     font-family: 'Sofia', cursive;
     text-align: center;
     margin-top: 50px;
+    font-weight: 600;
 }
 
 form {
@@ -24,6 +25,7 @@ body {
 p {
     font-family: 'Antic Didone', serif;
     font-size: 18px;
+    font-weight: 400;
 }
 
 #form2 {
@@ -40,3 +42,6 @@ p {
     margin-right: 450px;
 }
 
+#output {
+    display: none;
+}
