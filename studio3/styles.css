@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'budmojiggler';
+    src: url('fonts/budmo_jiggler-webfont.woff2') format('woff2'),
+         url('fonts/budmo_jiggler-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    font-family: 'budmojiggler';
+    font-size: 50px;
+}
