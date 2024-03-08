@@ -9,11 +9,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap" rel="stylesheet">
-    
 </head>
 <body>
-    <h2>Game Rules!</h2>
-    <p>Players take turns to roll two die as many times as they wish, adding all rolled results to a running total, but they will be forced to pass their turn once they roll a 1. The rolled total will not be added to their game total either. If one player rolls two 1s, their score gets automatically reset to 0. Whoever gets to 30 points first, wins!</p>
-    <h3>Start</h3>
+    <div class="header-container">
+        <img src="images/cards-top.png" alt="cards and dice" width="740">
+        <h1>Casino Night</h1>
+    </div>
+    
+    <section>
+        <h2>Game Rules!</h2>
+        <p>Players take turns to roll two die as many times as they wish, adding all rolled results to a running total, but they will be forced to pass their turn once they roll a 1. The rolled total will not be added to their game total either. If one player rolls two 1's, their score gets automatically reset to 0. Whoever gets to 30 points first, wins!</p>
+
+        <img src="images/poker-chips1.png" alt="left chips" id="chips1">
+        <img src="images/poker-chips2.png" alt="right chips" id="chips2">
+
+        <div id="gamecontrol">
+            <h2>Start a Game</h2>
+            <button id="startgame">Pick a Player, and Start the Game!</button>
+        </div>
+
+        <div id="game"></div>
+        <div id="actions"></div>
+        <div id="score"></div>
+    </section>
+    <footer>
+        <a href="sources.html">Sound Sources!</a>
+    </footer>
 </body>
 </html>

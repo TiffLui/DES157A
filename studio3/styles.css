@@ -8,20 +8,44 @@
 
 /* this is how to use the downloaded font!
     font-family: 'budmojiggler';
-    font-size: 30px;
 } */
+
+.header-container img {
+    display: block;
+    margin: auto;
+}
+
+.header-container h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #DFB425; 
+    font-size: 70px;
+    text-align: center;
+    font-family: 'budmojiggler';
+    font-weight: 200;
+}
+
+h1 {
+    color:#DFB425;
+    font-weight: 200;
+    font-family: 'budmojiggler';
+    text-align: center;
+    font-size: 50px;
+}
 
 h2 {
     font-family: "Solway", serif;
     font-size: 30px;
     color: white;
     font-weight: 400;
-    padding-top: 350px;
-    padding-left: 40px;
+    /* padding-left: 100px; */
+    text-align: center;
+    margin: 5px;
 }
 
 body {
-    background-image: url(images/casinoBg.jpg);
     background-color: #7F1419;
 }
 
@@ -30,13 +54,59 @@ p {
     font-size: 15px;
     color: white;
     font-weight: 400;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+}
+
+#chips1 {
+    position: absolute;
+    bottom: -20%;
+    left: 88%;
+}
+
+#chips2 {
+    position: absolute;
+    bottom: -20%;
+    right: 87%;
+}
+
+#startgame, #quit, #roll, #pass, #rollagain {
+    margin: auto;
+    display: block;
+}
+
+#game {
+    text-align: center;
+    margin: auto;
+}
+
+button {
+    font-family: 'budmojiggler';
+    color:#DFB425;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 100;
 }
 
 h3 {
-    font-family: 'budmojiggler';
-    font-size: 40px;
-    color: #DFB425;
+    font-family: "Solway", serif;
+    font-size: 17px;
+    padding-left: 250px;
+}
+
+footer {
     text-align: center;
+    font-family: "Solway", serif;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #DFB425;
 }
