@@ -17,7 +17,7 @@
 
 .header-container h1 {
     position: absolute;
-    top: 25%;
+    top: 23%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #DFB425; 
@@ -62,13 +62,13 @@ p {
 #chips1 {
     position: absolute;
     bottom: -20%;
-    left: 88%;
+    left: 85%;
 }
 
 #chips2 {
     position: absolute;
     bottom: -20%;
-    right: 87%;
+    right: 83%;
 }
 
 #startgame, #quit, #roll, #pass, #rollagain {
