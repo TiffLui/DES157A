@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'pkmn_rbygscregular';
+    src: url('fonts/pkmn_rbygsc-webfont.woff2') format('woff2'),
+         url('fonts/pkmn_rbygsc-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* How to use the downloaded font:
+font-family: 'pkmn_rbygscregular';
+*/
+
+body {
+    background-image: url(images/grass.jpg);
+    background-size: cover;
+    max-width: 750px;
+}
+
+#dragonite-b {
+    position: absolute;
+    top: 85px;
+    right: 320px;
+    cursor: pointer;
+}
+
+#flareon-b {
+    position: absolute;
+    top: 90px;
+    left: 500px;
+    cursor: pointer;
+}
+
+#glaceon-b {
+    position: absolute;
+    top: 185px;
+    right: 285px;
+    cursor: pointer;
+}
+
+#groudon-b {
+    position: absolute;
+    top: 505px;
+    left: 315px;
+    cursor: pointer;
+}
+
+#jolteon-b {
+    position: absolute;
+    top: 285px;
+    left: 250px;
+    cursor: pointer;
+}
+
+#leafeon-b {
+    position: absolute;
+    top: 320px;
+    right: 410px;
+    cursor: pointer;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.overlay-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    color: #999;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'pkmn_rbygscregular';
+    font-weight: 300;
+    font-size: 30px;
+}
+
+p {
+    font-family: "Akatab", sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
