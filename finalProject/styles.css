@@ -29,6 +29,12 @@ font-family: 'pkmn_rbygscregular';
     text-align: center;
 }
 
+#startGameButton {
+    background-color: #A0D94A;
+    padding: 15px 20px;
+    font-family: 'pkmn_rbygscregular';
+}
+
 body {
     overflow-y: auto;
 }
@@ -164,13 +170,12 @@ ul {
     font-family: "Akatab", sans-serif;
     align-items: center;
     text-align: center;
-    font-size: 18px;
-    /* padding: none; */
+    font-size: 17px;
+    padding-inline-start: 0%;
 }
 
 ul, li {
     text-align: center;
-    /* padding: none; */
 }
 
 #enemyPokemonImg {
@@ -272,8 +277,13 @@ ul, li {
 #actionBtn {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 5px;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+#actionBtn #attackBtn,
+#actionBtn #runBtn {
+    margin: 0 15px;
 }
 
 .yesBtn {
@@ -391,4 +401,16 @@ ul, li {
 @keyframes spin {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);} 
+}
+
+#attackBtn {
+    background-color: #A0D94A;
+    padding: 1px 10px;
+    font-family: 'pkmn_rbygscregular';
+}
+
+#runBtn {
+    background-color: #FF6A53;
+    padding: 1px 10px;
+    font-family: 'pkmn_rbygscregular';
 }
