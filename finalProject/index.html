@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akatab:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ca0944c30f.js" crossorigin="anonymous"></script>
+    <title>Every Picture</title>
+</head>
+<body>
+    <div id="instructions" class="instructions">
+        <div class="instructions-content">
+            <h2>Welcome to the Pokémon Battle Game!</h2>
+            <p>Here are the instructions:</p>
+            <ul>
+                <li>Explore the different Pokemon!</li>
+                <li>Try catching a Pokemon by battling it</li>
+                <li>Click the attack button to attack your opponent Pokemon.</li>
+                <li>If you manage to win, you'll be able to see it in your inventory!</li>
+                <li>Have fun!</li>
+            </ul>
+            <button id="startGameButton">Start Game</button>
+        </div>
+    </div>
+
+    <a href="#" id="inventory-b">
+	    <i class="fas fa-box-open fa-2xl"></i>
+  	</a>
+        <!-- Overlay structure -->
+        <div id="overlay-inventory" class="overlay">
+            <div class="overlay-content">
+                <span class="closeBtn">&times;</span>
+                <h2>Inventory Window</h2>
+                <p>This is the content of the overlay window.</p>
+                <div id="inventory-display"></div>
+            </div>
+        </div>
+
+    <div id="overlay-dragonite" class="overlay">
+        <div class="overlay-content">
+            <span class="closeBtn">&times;</span>
+            <img src="images/dragonite.png" alt="Dragonite" height="250" id="dragoniteImg">
+            <h2>You've found Dragonite!</h2>
+            <p>Pokedex Number: #0149</p>
+            <p>Type: Dragon & Flying</p>
+            <p>Most Dragonite are warmhearted and selfless! They will rescue anyone lost at sea, however be warned to not harm their environment!</p>
+            <p class="catch">Would you like to catch this Pokemon?</p>
+            <button class="yesBtn" id="yesDragonite">Yes</button>
+            <button class="noBtn">No</button>
+        </div>
+    </div>
+    <div id="overlay-flareon" class="overlay">
+        <div class="overlay-content">
+            <span class="closeBtn">&times;</span>
+            <img src="images/flareon.png" alt="Flareon Ball" height="250" id="flareonImg">
+            <h2>You've found Flareon!</h2>
+            <p>Pokedex Number: #0136</p>
+            <p>Type: Fire</p>
+            <p>Flareon is a really shy Pokémon. When they're nervous, they releases large amounts of heat through its fur.</p>
+            <p class="catch">Would you like to catch this Pokemon?</p>
+            <button class="yesBtn" id="yesFlareon">Yes</button>
+            <button class="noBtn">No</button>
+        </div>
+    </div>
+    <div id="overlay-glaceon" class="overlay">
+        <div class="overlay-content">
+            <span class="closeBtn">&times;</span>
+            <img src="images/glaceon.png" alt="Glaceon Ball" height="250" id="glaceonImg">
+            <h2>You've found Glaceon!</h2>
+            <p>Pokedex Number: #0471</p>
+            <p>Type: Ice</p>
+            <p>Most Glaceon are docile, cool, and collected. However, they're also very skilled hunters! </p>
+            <p class="catch">Would you like to catch this Pokemon?</p>
+            <button class="yesBtn" id="yesGlaceon">Yes</button>
+            <button class="noBtn">No</button>
+        </div>
+    </div>
+    <div id="overlay-groudon" class="overlay">
+        <div class="overlay-content">
+            <span class="closeBtn">&times;</span>
+            <img src="images/groudon.png" alt="Groudon Ball" height="250" id="groudonImg">
+            <h2>You've found Groudon!</h2>
+            <p>Pokedex Number: #0383</p>
+            <p>Type: Ground</p>
+            <p>Groudon possesses the ability to expand continents. Legends tell of its many clashes against Kyogre, as each sought to gain the power of nature.</p>
+            <p class="catch">Would you like to catch this Pokemon?</p>
+            <button class="yesBtn" id="yesGroudon">Yes</button>
+            <button class="noBtn">No</button>
+        </div>
+    </div>
+    <div id="overlay-jolteon" class="overlay">
+        <div class="overlay-content">
+            <span class="closeBtn">&times;</span>
+            <img src="images/jolteon.png" alt="Jolteon Ball" height="250" id="jolteonImg">
+            <h2>You've found Jolteon!</h2>
+            <p>Pokedex Number: #0135</p>
+            <p>Type: Electric</p>
+            <p>Most Jolteon are very sensitive and temperamental, which causes them to constantly charge as they quickly change moods.</p>
+            <p class="catch">Would you like to catch this Pokemon?</p>
+            <button class="yesBtn" id="yesJolteon">Yes</button>
+            <button class="noBtn">No</button>
+        </div>
+    </div>
+    <div id="overlay-leafeon" class="overlay">
+        <div class="overlay-content">
+            <span class="closeBtn">&times;</span>
+            <img src="images/leafeon.png" alt="Leafeon Ball" height="250" id="leafeonImg">
+            <h2>You've found Leafeon!</h2>
+            <p>Pokedex Number: #0470</p>
+            <p>Type: Grass</p>
+            <p>Most Leafeon are pacifists and don't like to fight. Very gentle and kind! </p>
+            <p class="catch">Would you like to catch this Pokemon?</p>
+            <button class="yesBtn" id="yesLeafeon">Yes</button>
+            <button class="noBtn">No</button>
+        </div>
+    </div>
+
+    <!-- Added a div and wrapped all the pokemon ball images in it-->
+    <div id="pokemon-balls-container">
+            <img src="images/ultra-ball.png" alt="Dragonite Ball" id="dragonite-b" height="35">
+            <img src="images/great-ball.png" alt="Flareon Ball" id="flareon-b" height="35">
+            <img src="images/great-ball.png" alt="Glaceon Ball" id="glaceon-b" height="35">
+            <img src="images/dusk-ball.png" alt="Groudon Ball" id="groudon-b" height="35">
+            <img src="images/great-ball.png" alt="Jolteon Ball" id="jolteon-b" height="35">
+            <img src="images/great-ball.png" alt="Leafeon Ball" id="leafeon-b" height="35">
+   </div>
+
+    <!-- Battle Section -->
+    <div id="battle-section">
+        <div id="battleStuff">
+            <div id="battleArea">
+                <div id="playerPokemon">
+                    <img src="" alt="Your Pokémon" id="playerPokemonImg">
+                    <div class="health">
+                    <div id="playerHealthBar" class="healthBar"></div>
+                </div>
+                </div>
+                <div id="enemyPokemon">
+                    <img src="" alt="Enemy Pokémon" id="enemyPokemonImg">
+                    <div class="health">
+                        <div id="enemyHealthBar" class="healthBar"></div>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <div id="battleManual">
+            <div id="messages"></div>
+            <div id="actionBtn">
+                <button id="attackBtn">Attack</button>
+                <button id="runBtn">Run</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <audio id="homeMusic" src="sounds/cycling.mp3" loop></audio>
+    <audio id="battleMusic" src="sounds/pokemon-battle.mp3"></audio>
+<footer>
+    <a href="sources.html">Sound Sources!</a>
+</footer>
+</body>
+</html>
